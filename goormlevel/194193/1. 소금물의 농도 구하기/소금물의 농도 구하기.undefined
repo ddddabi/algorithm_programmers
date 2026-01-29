@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+
+class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		double N = sc.nextDouble();
+		double M = sc.nextDouble();
+
+		double result = 7.0 * N / (N + M);
+
+		result = Math.floor(result * 100) / 100;
+		System.out.printf("%.2f", result);
+	}
+}
